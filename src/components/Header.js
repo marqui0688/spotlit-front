@@ -2,6 +2,7 @@ import "./Header.scss";
 import auditionsIcon from "../assets/icons/auditions.png";
 import calendarIcon from "../assets/icons/calendar.png";
 import researchIcon from "../assets/icons/research.png";
+import SearchBar from "./SearchBar/SearchBar";
 
 export const Header = () => {
   return (
@@ -12,6 +13,7 @@ export const Header = () => {
         </div>
 
         {/* Navigation*/}
+        <SearchBar />
         <nav className="navigation">
           <div className="zoom">
             <a>

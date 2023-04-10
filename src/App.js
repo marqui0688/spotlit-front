@@ -4,6 +4,7 @@ import SearchBar from "../src/components/SearchBar/SearchBar";
 import { Home } from "../src/pages/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Login } from "./pages/Login";
+import AddAudition from "./components/AddAudition/AddAudition";
 // import { Register } from "../src/components/Register/Register";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/addaudition" element={<AddAudition />} />
         </Routes>
       </div>
     </BrowserRouter>

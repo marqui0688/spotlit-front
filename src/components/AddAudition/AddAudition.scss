@@ -1,0 +1,53 @@
+// .page-wrapper {
+//     margin-top: 3rem;
+//     box-shadow: 10px 5px 5px red;
+//     color: black;
+//     background-color: whitesmoke;
+//     border: transparent;
+//     border-radius: 10px;
+// }
+
+.auth-form {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+  }
+  &__title-wrapper {
+    display: flex;
+  }
+  &__app-title {
+    font-size: 6rem;
+    margin-bottom: 5rem;
+  }
+
+  &__login {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+  }
+  &__header {
+    margin-top: 2rem;
+  }
+
+  &__label {
+    text-align: left;
+    padding: 0.25rem 0;
+  }
+  &__input {
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+  }
+  &__btn {
+    border: none;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #7439db;
+    margin-top: 2rem;
+    width: 100%;
+  }
+}
