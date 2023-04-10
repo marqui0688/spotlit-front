@@ -1,0 +1,71 @@
+// @use "_typography.scss" as *;
+
+.App {
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+  background-image: linear-gradient(79deg, #5116b6, #c66fbc 48%, #f7944d);
+}
+.auth-form {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+  }
+  &__title-wrapper {
+    display: flex;
+  }
+  &__app-title {
+    font-size: 6rem;
+    margin-bottom: 5rem;
+  }
+  &__app-logo {
+    height: 0.5rem;
+    width: 0.5rem;
+    object-fit: scale-down;
+  }
+  &__login {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+  }
+  &__header {
+    margin-top: 2rem;
+  }
+  &__register {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+  }
+  &__label {
+    text-align: left;
+    padding: 0.25rem 0;
+  }
+  &__input {
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+  }
+  &__btn {
+    border: none;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #7439db;
+    margin-top: 2rem;
+    width: 100%;
+  }
+  &__link-btn {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    color: rgb(151, 168, 28);
+    text-decoration: underline;
+    border: none;
+  }
+}

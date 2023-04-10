@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Palosecco";
+  font-weight: 400;
+  src: url("../assets/fonts/PalosecoMedium-ZxWl.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+}
+
+.header {
+  height: 6rem;
+  width: 100%;
+
+  text-align: center;
+
+  &__title-container {
+    width: 100%;
+  }
+  &__title-title {
+    font-family: "Palosecco";
+  }
+}
+.navigation {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2.5rem;
+  &__header {
+    transform: scale(1.5);
+  }
+}
+
+.zoom:hover {
+  transform: scale(1.5);
+}

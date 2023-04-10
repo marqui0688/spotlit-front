@@ -1,0 +1,23 @@
+.audition-list {
+  display: flex;
+
+  &__component {
+    margin-top: 3rem;
+    box-shadow: 10px 5px 5px red;
+    color: black;
+    background-color: whitesmoke;
+    border: transparent;
+    border-radius: 10px;
+  }
+
+  &__label {
+    display: flex;
+    // gap: 11rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  &__label-item {
+    flex: 1;
+    margin-bottom: 2rem;
+  }
+}
