@@ -1,7 +1,5 @@
 import "./Header.scss";
-import auditionsIcon from "../assets/icons/auditions.png";
-import calendarIcon from "../assets/icons/calendar.png";
-import researchIcon from "../assets/icons/research.png";
+
 import SearchBar from "./SearchBar/SearchBar";
 
 export const Header = () => {
@@ -17,21 +15,21 @@ export const Header = () => {
         {/* Navigation*/}
 
         <nav className="navigation">
-          <div className="zoom">
+          <div>
             <a href="/">
               <p className="navigation__header">My Auditions</p>
             </a>
           </div>
-          <div className="zoom">
-            <a>
+          <div>
+            <a href="/calendar">
               <p className="navigation__header">Calendar</p>
             </a>
           </div>
-          <div className="zoom">
+          {/* <div>
             <a>
               <p className="navigation__header">Research</p>
             </a>
-          </div>
+          </div> */}
         </nav>
         <SearchBar />
       </header>
