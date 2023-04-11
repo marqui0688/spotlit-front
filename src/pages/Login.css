@@ -5,13 +5,32 @@
   align-items: center;
   justify-content: center;
   color: whitesmoke;
-  background-image: linear-gradient(79deg, #7439db, #6f77c6 48%, #f7944d);
+  background-image: linear-gradient(79deg, #580cd9, #8e6fc6 48%, #0b0a09);
+}
+
+.title-wrapper {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.form-header {
+  margin-bottom: 2rem;
 }
 
 .auth-form__container {
   display: flex;
   flex-direction: column;
   padding: 5rem;
+}
+.auth-form__app-title {
+  font-size: 6rem;
+  margin-bottom: 5rem;
+}
+.auth-form__app-logo {
+  height: 0.5rem;
+  width: 0.5rem;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 .auth-form__login {
   display: flex;
@@ -40,9 +59,14 @@
   border-radius: 10px;
   cursor: pointer;
   color: #7439db;
+  margin-top: 2rem;
+  width: 100%;
 }
 .auth-form__link-btn {
-  background: none;
-  color: white;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  color: rgb(151, 168, 28);
   text-decoration: underline;
-}/*# sourceMappingURL=App.css.map */
+  border: none;
+}/*# sourceMappingURL=Login.css.map */

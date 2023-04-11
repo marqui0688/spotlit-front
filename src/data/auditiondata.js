@@ -1,0 +1,77 @@
+import React from "react";
+import {
+  Schedule,
+  Day,
+  Week,
+  WorkWeek,
+  Month,
+  Agenda,
+  EventRenderedArgs,
+} from "@syncfusion/ej2-schedule";
+
+export const auditionData = [
+  {
+    Id: 1,
+    Subject: "HOTEL COCAINE",
+    Location: "Brooklyn",
+    StartTime: "new Date(2023, 1, 15, 10, 0)",
+    EndTime: "new Date(2023, 1, 15, 10, 0)",
+    CategoryColor: "#7fa900",
+  },
+  {
+    Id: 2,
+    Subject: "MOTHER",
+    Location: "BROOKLYN",
+    StartTime: "new Date(2023, 1, 15, 10, 0)",
+    EndTime: "new Date(2023, 1, 15, 10, 0)",
+    CategoryColor: "#7fa900",
+  },
+  {
+    Id: 3,
+    Subject: "OAKVILLE",
+    Location: "BROOKLYN",
+    StartTime: "new Date(2023, 1, 15, 10, 0)",
+    EndTime: "new Date(2023, 1, 15, 10, 0)",
+    CategoryColor: "#1aaa55",
+  },
+  {
+    Id: 4,
+    Subject: "THE IRRATIONAL",
+    Location: "BROOKLYN",
+    StartTime: "new Date(2023, 1, 15, 10, 0)",
+    EndTime: "new Date(2023, 1, 15, 10, 0)",
+    CategoryColor: "#7fa900",
+  },
+  {
+    Id: 5,
+    Subject: "Producers Session BLUE BLOODS",
+    Location: "BROOKLYN",
+    StartTime: "new Date(2023, 1, 15, 10, 0)",
+    EndTime: "new Date(2023, 1, 15, 10, 0)",
+    CategoryColor: "#7fa900",
+  },
+  {
+    Id: 6,
+    Subject: "AND JUST LIKE THAT",
+    Location: "BROOKLYN",
+    StartTime: "new Date(2023, 1, 15, 10, 0)",
+    EndTime: "new Date(2023, 1, 15, 10, 0)",
+    CategoryColor: "#1aaa55",
+  },
+  {
+    Id: 7,
+    Subject: "FOUND",
+    Location: "BROOKLYN",
+    StartTime: "new Date(2023, 1, 15, 10, 0)",
+    EndTime: "new Date(2023, 1, 15, 10, 0)",
+    CategoryColor: "#1aaa55",
+  },
+  {
+    Id: 8,
+    Subject: "BASS REEVES",
+    Location: "BROOKLYN",
+    StartTime: "new Date(2023, 1, 15, 10, 0)",
+    EndTime: "new Date(2023, 1, 15, 10, 0)",
+    CategoryColor: "#1aaa55",
+  },
+];

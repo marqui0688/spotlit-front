@@ -9,14 +9,16 @@ export const Header = () => {
     <>
       <header className="header">
         <div className="header__title-container">
-          <p className="header__title-title">Spotlit</p>
+          <a href="/">
+            <p className="header__title-title">Spotlit</p>
+          </a>
         </div>
 
         {/* Navigation*/}
 
         <nav className="navigation">
           <div className="zoom">
-            <a>
+            <a href="/">
               <p className="navigation__header">My Auditions</p>
             </a>
           </div>

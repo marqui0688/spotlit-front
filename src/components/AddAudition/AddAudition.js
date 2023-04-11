@@ -42,6 +42,7 @@ function AddAudition() {
       <Header />
       <div className="auth-form__container">
         <h2 className="auth-form__header">Add Audition</h2>
+
         <form className="auth-form__login" onSubmit={handleSubmit}>
           <label className="auth-form__label" htmlFor="project">
             Project
@@ -88,7 +89,7 @@ function AddAudition() {
           </label>
           <select id="status" className="auth-form__input" placeholder="Status">
             <option value="Please select">Please select</option>
-            <option value="Submitted">Submitted</option>
+            <option value="Submitted">SUBMITTED</option>
             <option value="Booked">BOOKED</option>
             <option value="Pass">PASSED</option>
             <option value="Request Extension">REQUEST EXTENSION</option>

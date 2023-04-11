@@ -1,0 +1,22 @@
+.audition-list {
+  display: flex;
+}
+.audition-list__component {
+  margin-top: 3rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  box-shadow: 10px 5px 5px #c6df17;
+  color: black;
+  background-color: whitesmoke;
+  border: transparent;
+  border-radius: 10px;
+}
+.audition-list__label {
+  display: flex;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.audition-list__label-item {
+  flex: 1;
+  margin-bottom: 2rem;
+}/*# sourceMappingURL=AuditionList.css.map */

@@ -1,0 +1,18 @@
+.audition__card-component {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4rem;
+  padding: 0 1.5rem 1.5rem;
+  border-bottom: solid 1px purple;
+  border-style: double;
+}
+.audition__card-left {
+  flex: 1 1;
+}
+.audition__card-right {
+  flex: 1 1;
+}
+.audition__info {
+  flex: 1;
+}/*# sourceMappingURL=AuditionCard.css.map */
