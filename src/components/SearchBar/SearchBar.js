@@ -26,15 +26,12 @@ function SearchBar() {
   return (
     <div className="search">
       <form className="search__input" onSubmit={handleSubmit}>
-        <label className="search__label" for="searchbar">
-          Search
-        </label>
         <input
           className="search__field"
           placeholder="Search"
           name="searchbar"
         />
-        <button>Search</button>
+        <button>Research</button>
       </form>
     </div>
   );

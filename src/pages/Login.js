@@ -14,12 +14,13 @@ export const Login = (props) => {
 
   return (
     <div className="auth-form__container">
-      <div classname="auth-form__title-wrapper">
-        <h1 classname="auth-form__app-title">Spotlit</h1>
+      <div classname="title-wrapper">
+        <h1 classname="title-wrapper__title">Spotlit</h1>
         {/* <img className="auth-form__app-logo" src={logo} alt="spotlit-logo" /> */}
       </div>
-      <h2 classname="auth-form__header">Login</h2>
+
       <form className="auth-form__login" onSubmit={handleSubmit}>
+        <h2 classname="form-header">Login</h2>
         <label className="auth-form__label" htmlFor="email">
           Email
         </label>

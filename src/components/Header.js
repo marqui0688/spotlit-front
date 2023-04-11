@@ -13,7 +13,7 @@ export const Header = () => {
         </div>
 
         {/* Navigation*/}
-        <SearchBar />
+
         <nav className="navigation">
           <div className="zoom">
             <a>
@@ -31,6 +31,7 @@ export const Header = () => {
             </a>
           </div>
         </nav>
+        <SearchBar />
       </header>
     </>
   );

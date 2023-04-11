@@ -1,16 +1,12 @@
 .audition {
   &__card-component {
-    // border: 2px solid #efefef;
-    // display: flex;
-    // flex-wrap: wrap;
-    // align-items: baseline;
-    // gap: 1rem;
-    // padding: 0 1.5rem 1.5rem;    border-top: 0.063rem solid #bdc5d5;
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
     gap: 4rem;
     padding: 0 1.5rem 1.5rem;
+    border-bottom: solid 1px purple;
+    border-style: double;
   }
   &__card-left {
     flex: 1 1;
