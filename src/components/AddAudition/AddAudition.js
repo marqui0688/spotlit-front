@@ -41,7 +41,7 @@ function AddAudition() {
     <div className="page-wrapper">
       <Header />
       <div className="auth-form__container">
-        <h2 className="auth-form__header">Add Audition</h2>
+        {/* <h2 className="zoom">Add Audition</h2> */}
 
         <form className="auth-form__login" onSubmit={handleSubmit}>
           <label className="auth-form__label" htmlFor="project">

@@ -6,7 +6,9 @@
 //     border: transparent;
 //     border-radius: 10px;
 // }
-
+.page-wrapper {
+  width: 100%;
+}
 .auth-form {
   &__container {
     display: flex;
@@ -55,4 +57,7 @@
     width: 100%;
     font-family: "Palosecco";
   }
+}
+.zoom:hover {
+  transform: scale(1.5);
 }

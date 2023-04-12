@@ -23,13 +23,15 @@ const Home = () => {
   return (
     <div>
       <Header />
-      <p className="header-1">My Auditions</p>
-      <button onClick={() => navigate("/addaudition")}>Add Addition</button>
-      {auditionData.length > 0 ? (
-        <AuditionList auditionData={auditionData} />
-      ) : (
-        ""
-      )}
+      <div className="divider">
+        <button onClick={() => navigate("/addaudition")}>Add Addition</button>
+        {auditionData.length > 0 ? (
+          <AuditionList auditionData={auditionData} />
+        ) : (
+          ""
+        )}
+        <input type="date" />
+      </div>
     </div>
   );
 };

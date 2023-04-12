@@ -10,28 +10,19 @@ export const Header = () => {
           <a href="/">
             <p className="header__title-title">Spotlit</p>
           </a>
-        </div>
 
-        {/* Navigation*/}
-
-        <nav className="navigation">
-          <div>
+          <div className="zoom">
             <a href="/">
-              <p className="navigation__header">My Auditions</p>
+              <p className="navigation__header">Auditions</p>
             </a>
           </div>
-          <div>
-            <a href="/calendar">
-              <p className="navigation__header">Calendar</p>
+          <div className="zoom">
+            <a href="/find">
+              <p className="navigation__header">Find</p>
             </a>
           </div>
-          {/* <div>
-            <a>
-              <p className="navigation__header">Research</p>
-            </a>
-          </div> */}
-        </nav>
-        <SearchBar />
+          <SearchBar />
+        </div>
       </header>
     </>
   );

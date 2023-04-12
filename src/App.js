@@ -4,20 +4,22 @@ import SearchBar from "../src/components/SearchBar/SearchBar";
 import { Home } from "../src/pages/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Login } from "./pages/Login";
-import Calendar from "../src/pages/Calendar";
+import Find from "./pages/Find";
 import AddAudition from "./components/AddAudition/AddAudition";
-// import { Register } from "../src/components/Register/Register";
+import Register from "./components/Register/Register";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        {/* <SearchBar /> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+
           <Route path="/addaudition" element={<AddAudition />} />
-          <Route path="/calendar" element={<Calendar />} />
+
+          <Route path="/find" element={<Find />} />
         </Routes>
       </div>
     </BrowserRouter>

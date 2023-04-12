@@ -1,18 +1,18 @@
 // @use "_typography.scss" as *;
 
-.App {
-  text-align: center;
-  display: flex;
-  min-height: 100vh;
-  align-items: center;
-  justify-content: center;
-  color: whitesmoke;
-  background-image: linear-gradient(79deg, #580cd9, #8e6fc6 48%, #0b0a09);
-}
+// .App {
+//   text-align: center;
+//   display: flex;
+//   min-height: 100vh;
+//   align-items: center;
+//   justify-content: center;
+//   color: whitesmoke;
+//   background-image: linear-gradient (79deg, #d90c0f, #288d9b 48%, #288d9b);
+// }
 
 .title-wrapper {
-  display: flex;
   margin-bottom: 3rem;
+  font-size: 3rem;
 }
 
 .form-header {
@@ -24,6 +24,10 @@
     display: flex;
     flex-direction: column;
     padding: 5rem;
+  }
+  &__header {
+    margin-bottom: 3rem;
+    font-size: 2rem;
   }
 
   &__app-title {
@@ -55,6 +59,7 @@
     padding: 1rem;
     border: none;
     border-radius: 10px;
+    color: black;
   }
   &__btn {
     border: none;
@@ -70,7 +75,7 @@
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    color: rgb(151, 168, 28);
+    color: #7439db;
     text-decoration: underline;
     border: none;
   }
