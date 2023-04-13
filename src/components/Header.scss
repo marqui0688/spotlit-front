@@ -11,9 +11,15 @@
 .header {
   height: 6rem;
   width: 100%;
-  background-color: #0c0e0f;
+  background-color: black;
   height: 6.5rem;
   text-align: center;
+  display: flex;
+  align-items: center;
+
+  &__logo {
+    height: 2rem;
+  }
 
   &__title-container {
     width: 100%;
@@ -32,6 +38,11 @@ a {
   text-decoration: none;
   color: white;
 }
+// a:hover {
+//   text-decoration: underline;
+//   background-color: yellow;
+//   padding: 0.5rem;
+// }
 
 .navigation {
   display: flex;
@@ -45,5 +56,11 @@ a {
     padding: 0.3rem;
     border-radius: 10px;
     width: 100%;
+
+    &__header:hover {
+      text-decoration: underline;
+      background-color: yellow;
+      padding: 0.5rem;
+    }
   }
 }

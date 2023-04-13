@@ -1,7 +1,17 @@
+.page-wrapper {
+  width: 100%;
+}
+
 .header-1 {
   margin-top: 7rem;
   font-size: 2rem;
 }
 .divider {
-  margin-top: 8rem;
+  margin-top: 6rem;
+  display: flex;
+  justify-content: center;
+  &__add-icon {
+    cursor: pointer;
+    height: 8rem;
+  }
 }

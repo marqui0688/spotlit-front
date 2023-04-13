@@ -4,6 +4,7 @@ import { AuditionList } from "../components/AuditionList/AuditionList";
 import { useEffect, useState } from "react";
 import Header from "../components/Header";
 import { Navigate, useNavigate } from "react-router-dom";
+import plusIcon from "../assets/icons/pluss.png";
 
 const Home = () => {
   const [auditionData, setAuditionData] = useState([]);
@@ -21,17 +22,21 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+    <div className="page-wrapper">
       <Header />
       <div className="divider">
-        <button onClick={() => navigate("/addaudition")}>Add Addition</button>
-        {auditionData.length > 0 ? (
-          <AuditionList auditionData={auditionData} />
-        ) : (
-          ""
-        )}
-        <input type="date" />
+        <img
+          className="divider__add-icon"
+          src={plusIcon}
+          onClick={() => navigate("/addaudition")}
+        />
       </div>
+      {auditionData.length > 0 ? (
+        <AuditionList auditionData={auditionData} />
+      ) : (
+        ""
+      )}
+      <input type="date" />
     </div>
   );
 };

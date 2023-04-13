@@ -12,6 +12,7 @@ const AuditionList = ({ auditionData }) => {
         <p className="audition-list__label-item">Deadline</p>
         <p className="audition-list__label-item">Status</p>
       </div>
+
       {auditionData.map((audition) => {
         return <AuditionCard audition={audition} />;
       })}

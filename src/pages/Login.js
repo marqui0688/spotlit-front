@@ -13,47 +13,41 @@ export const Login = (props) => {
   };
 
   return (
-    <div className="auth-form__container">
+    <div className="login-form__container">
       <div className="title-wrapper">
         <h1 className="title-wrapper__title">Spotlit</h1>
-        {/* <img className="auth-form__app-logo" src={logo} alt="spotlit-logo" /> */}
+        {/* <img className="login-form__app-logo" src={logo} alt="spotlit-logo" /> */}
       </div>
 
-      <form className="auth-form__login" onSubmit={handleSubmit}>
-        <h2 className="auth-form__header">Login</h2>
-        <label className="auth-form__label" htmlFor="email">
+      <form className="login-form__login" onSubmit={handleSubmit}>
+        <h2 className="login-form__header">Login</h2>
+        <label className="login-form__label" htmlFor="email">
           Email
         </label>
         <input
-          className="auth-form__input"
+          className="login-form__input"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           type="email"
           placeholder="Email address"
         />
-        <label className="auth-form__label" htmlFor="Password">
+        <label className="login-form__label" htmlFor="Password">
           Password
         </label>
         <input
-          className="auth-form__input"
+          className="login-form__input"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           type="password"
           placeholder="Password"
         />
         <Link to="/">
-          <button className="auth-form__btn" type="submit">
+          <button className="login-form__btn" type="submit">
             Log In
           </button>
         </Link>
       </form>
-      <button
-        className="auth-form__link-btn"
-        type="submit"
-        onClick={() => props.onFormSwitch("register")}
-      >
-        Don't have an account? Register here.
-      </button>
+      <Link to="/register">Don't have an account? Register here.</Link>
     </div>
   );
 };

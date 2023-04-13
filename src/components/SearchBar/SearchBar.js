@@ -8,16 +8,26 @@ const API_URI = process.env.REACT_APP_API_URI;
 function SearchBar() {
   const { data, setData } = useState("");
   const navigate = useNavigate();
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    const query = e.target.searchbar.value.trim().replace(" ", "+");
 
-    window.open(`https://www.themoviedb.org/search?query=${query}`);
-    navigate(`https://www.themoviedb.org/search?query=${query}`);
+    const query = e.target.searchbar.value.trim().replace(" ", "+");
+    // const data = res.json();
+    // window.open(`https://www.themoviedb.org/search?query=${query}`);
+    // navigate(`https://www.themoviedb.org/search?query=${query}`);
+
+    // async function loadMovies(query) {
+    //   // const URL = `https://omdbapi.com/?s=${query}&page=1&apikey=b2aa9a08`;
+    //   const res = await fetch(`${URL}`);
+
+    //   // console.log(data.Search);
+    //   if (data.Response == "True") displayMovieList(data.Search);
+    // }
+
     axios
       .get(
-        `https://api.themoviedb.org/3/search/multi?api_key=201881c87db23748a32eed8954d51824&query=${query}`
+        // `https://api.themoviedb.org/3/search/multi?api_key=201881c87db23748a32eed8954d51824&query=${query}`
+        `https://www.omdbapi.com/?s=${query}&page=1&apikey=b2aa9a08`
       )
       .then((res) => {
         console.log(res.data);
@@ -26,7 +36,7 @@ function SearchBar() {
   };
   return (
     <>
-      /****** Search bar ******/
+      {/* Search bar  */}
       <div className="search__wrapper">
         <form className="search__input" onSubmit={handleSubmit}>
           <input
@@ -37,7 +47,7 @@ function SearchBar() {
           <button classname="search__button"></button>
         </form>
       </div>
-      /****** Search list ******/
+      {/* Search list */}
       <div className="search__list" id="search-list">
         <div className="search__list-item" id="search-item">
           <div className="search__list-thumbnail" id="search-thumbnail">
@@ -48,11 +58,11 @@ function SearchBar() {
             <p>2017</p>
           </div>
         </div>
-        /***** Result container ******/
+        {/* Result container */}
         <div className="result__wrapper">
           <div className="result__container">
             <div className="result__grid" id="result-grid">
-              /* Movie info */
+              {/* Movie info  */}
               <div className="result__movie-poster">
                 <img src={dummyThumb} />
               </div>
@@ -73,6 +83,10 @@ function SearchBar() {
                 <p className="result__actor">
                   <span style={{ fontWeight: "bold" }}>Actor:</span> Marcus
                   Anderson Jr
+                </p>
+                <p className="result__plot">
+                  <span style={{ fontWeight: "bold" }}>Plot:</span> Marcus
+                  Anderson Jr will book big this year.
                 </p>
               </div>
             </div>
