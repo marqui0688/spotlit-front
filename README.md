@@ -2,11 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Project Description
 
-In the project directory, you can run:
+Spotlit is a web application designed for actors to manage their auditions, schedules, and research for roles. It offers a fully responsive interface, a schedule tracker, access to research materials. The application streamlines actors' career management and helps them achieve greater success in their field. Overall, my project is an innovative and valuable tool for actors looking to take their careers to the next level. By providing a comprehensive suite of features and resources, my application can help actors manage their careers more efficiently, stay organized, and achieve greater success in their careers.
 
-### `npm start`
+
+### User Flow
 
 ```
 {
