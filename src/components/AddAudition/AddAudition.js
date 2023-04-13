@@ -4,7 +4,11 @@ import { useState } from "react";
 import Header from "../Header";
 import "./AddAudition.scss";
 
+import Modal from "../Modal/Modal";
+
 function AddAudition() {
+  const [openModal, setOpenModal] = useState(false);
+
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
@@ -41,6 +45,7 @@ function AddAudition() {
     <>
       <div className="page-wrapper">
         <Header />
+        <h1 className="page-header">Add Audition</h1>
         <div className="auth-form__container">
           <form className="auth-form__login" onSubmit={handleSubmit}>
             <label className="auth-form__label" htmlFor="project">
@@ -97,10 +102,18 @@ function AddAudition() {
               <option value="Pass">PASSED</option>
               <option value="Request Extension">REQUEST EXTENSION</option>
             </select>
-            <button className="auth-form__btn" type="submit">
+            <button
+              className="auth-form__btn"
+              type="submit"
+              onClick={(e) => {
+                e.preventDefault();
+                openModal.current.classList.remove("hidden-modal");
+              }}
+            >
               Add Audition
             </button>
           </form>
+          <Modal setOpenModal={setOpenModal} />
         </div>
       </div>
     </>

@@ -4,12 +4,10 @@ import Header from "../components/Header";
 
 function Find() {
   return (
-    <>
-      <div className="page-wrapper">
-        <Header />
-        <SearchBar />
-      </div>
-    </>
+    <div className="page-wrapper">
+      <Header />
+      <SearchBar />
+    </div>
   );
 }
 

@@ -26,8 +26,7 @@ function SearchBar() {
 
     axios
       .get(
-        // `https://api.themoviedb.org/3/search/multi?api_key=201881c87db23748a32eed8954d51824&query=${query}`
-        `https://www.omdbapi.com/?s=${query}&page=1&apikey=b2aa9a08`
+        `https://api.themoviedb.org/3/search/multi?api_key=201881c87db23748a32eed8954d51824&query=${query}``https://www.omdbapi.com/?s=${query}&page=1&apikey=b2aa9a08`
       )
       .then((res) => {
         console.log(res.data);
@@ -47,7 +46,8 @@ function SearchBar() {
           <button classname="search__button"></button>
         </form>
       </div>
-      {/* Search list */}
+    </>
+    /* Search list
       <div className="search__list" id="search-list">
         <div className="search__list-item" id="search-item">
           <div className="search__list-thumbnail" id="search-thumbnail">
@@ -58,11 +58,11 @@ function SearchBar() {
             <p>2017</p>
           </div>
         </div>
-        {/* Result container */}
+        Result container
         <div className="result__wrapper">
           <div className="result__container">
             <div className="result__grid" id="result-grid">
-              {/* Movie info  */}
+              Movie info 
               <div className="result__movie-poster">
                 <img src={dummyThumb} />
               </div>
@@ -92,8 +92,7 @@ function SearchBar() {
             </div>
           </div>
         </div>
-      </div>
-    </>
+      </div> */
   );
 }
 

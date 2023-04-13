@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import "./Login.scss";
+import appIcon from "../assets/icons/trythis6.png";
 
 export const Login = (props) => {
   const [email, setEmail] = useState("");
@@ -16,7 +17,6 @@ export const Login = (props) => {
     <div className="login-form__container">
       <div className="title-wrapper">
         <h1 className="title-wrapper__title">Spotlit</h1>
-        {/* <img className="login-form__app-logo" src={logo} alt="spotlit-logo" /> */}
       </div>
 
       <form className="login-form__login" onSubmit={handleSubmit}>
