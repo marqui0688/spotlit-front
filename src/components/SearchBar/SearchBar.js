@@ -13,7 +13,7 @@ function SearchBar() {
 
     const query = e.target.searchbar.value.trim().replace(" ", "+");
     // const data = res.json();
-    // window.open(`https://www.themoviedb.org/search?query=${query}`);
+    window.open(`https://www.themoviedb.org/search?query=${query}`);
     // navigate(`https://www.themoviedb.org/search?query=${query}`);
 
     // async function loadMovies(query) {
@@ -26,7 +26,7 @@ function SearchBar() {
 
     axios
       .get(
-        `https://api.themoviedb.org/3/search/multi?api_key=201881c87db23748a32eed8954d51824&query=${query}``https://www.omdbapi.com/?s=${query}&page=1&apikey=b2aa9a08`
+        `https://api.themoviedb.org/3/search/multi?api_key=201881c87db23748a32eed8954d51824&query=${query}`
       )
       .then((res) => {
         console.log(res.data);
@@ -43,7 +43,7 @@ function SearchBar() {
             placeholder="Search"
             name="searchbar"
           />
-          <button classname="search__button"></button>
+          {/* <button classname="search__button">Submit</button> */}
         </form>
       </div>
     </>
