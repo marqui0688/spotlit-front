@@ -1,13 +1,4 @@
-.App {
-  text-align: center;
-  display: flex;
-  min-height: 100vh;
-  align-items: center;
-  justify-content: center;
-  color: whitesmoke;
-  background-image: linear-gradient(79deg, #7439db, #c66fbc 48%, #f7944d);
-}
-.auth-form {
+.register-form {
   &__header {
     font-size: 2rem;
   }
