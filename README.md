@@ -13,6 +13,8 @@ Register to create an account and then log in.  Add an audition and fill out aud
 
 ### User Flow
 [Screenshot (14)](https://user-images.githubusercontent.com/76495557/232107920-9de3db53-515d-48dd-aed4-707d26a94a20.png)
+![Screenshot (24)](https://user-images.githubusercontent.com/76495557/232113878-35980bf8-cbc6-4ba9-8bc1-ea1568cf2934.png)
+
 ![Screenshot (15)](https://user-images.githubusercontent.com/76495557/232108014-a69a7c21-237b-4cca-8177-77c13aad9cbe.png)
 ![Screenshot (16)](https://user-images.githubusercontent.com/76495557/232108043-124a8410-1e68-44e4-99a4-457d4d114268.png)
 ![Screenshot (17)](https://user-images.githubusercontent.com/76495557/232108066-8fdcd400-1720-4943-ac9f-8167875b3d4f.png)
